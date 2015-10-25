@@ -35,4 +35,23 @@ Use gsub function for pattern replacement to clean up the data labels.
 
 ### Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
 Use aggregate function to average each variable based on each activity and each subject.
-extract the final data.frame into a text file.
+extract the final data.frame into a text file using write.table command
+
+
+### Reading the tidy_data File
+
+The tidy data file might not look very proper when opened with a local text editor. Please use the read.table command to get the data into R and cross check.
+
+The following command can also be used to get the data into 
+
+data1<-read.table("https://s3.amazonaws.com/coursera-uploads/user-eb35a391319191001a328a63/975117/asst-3/859f6c507b6111e59f1427905112e56c.txt")
+
+head(data1)
+
+Else The Data can also be converted into csv file and opened in a spreadsheet.
+
+write.csv(data1,"Test1.csv")
+
+
+
+
