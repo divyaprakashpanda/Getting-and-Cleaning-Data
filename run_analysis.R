@@ -102,5 +102,5 @@ tidy_data    = aggregate(. ~subject_id + activity_id, final_data1, mean);
 tidy_data    = merge(activity_type,tidy_data,by='activity_id',all.x=TRUE);
 
 # Export the tidy_data dataframe 
-write.table(tidy_data, './tidy_data.txt',row.names=TRUE,sep='\t');
+write.table(tidy_data, './tidy_data.txt',row.names=FALSE,sep='\t');
 
